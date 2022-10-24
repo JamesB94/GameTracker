@@ -1,0 +1,83 @@
+.container {
+    border: 2px solid black;
+    background-color:  #653496;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.5fr 1.5fr;
+    grid-template-rows: 60px ;
+
+    grid-template-areas:
+    'homeicon search outThisMonth allMonths'
+
+}
+
+.container button{
+    background-color: #74B652;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 2px;
+    border-radius: 5px;
+    border: none;
+}
+
+.homeicon {
+    grid-area:homeicon;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.search {
+    grid-area:search;
+    text-align: center;
+    padding-top: 15px;
+    
+}
+
+.search input {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.fa-gamepad {
+    color: #74B652;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.outThisMonth {
+    grid-area:outThisMonth;
+    
+}
+
+.outThisMonth p {
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+    color: #74B652;
+    cursor: pointer;
+}
+
+.allMonths {
+    grid-area:allMonths;
+}
+
+.allMonths p {
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+    color: #74B652;
+    cursor: pointer;
+}
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
