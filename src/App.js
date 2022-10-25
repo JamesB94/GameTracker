@@ -1,12 +1,16 @@
-import NavBar from './compontents/navbar/navbar';
+import NavBar from "./compontents/navbar/navbar";
+import GameDispaly from "./compontents/gameDisplay/gameDisplay";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="gridContainer">
-   
+    <div className="gridContainer">
+      <main className="header">
         <NavBar />
-      </header>
+      </main>
+      <section className="mainCol">
+      <GameDispaly />
+      </section>
     </div>
   );
 }
